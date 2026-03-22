@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Shell logs / temp
+*.log
+*.tmp
+*.bak

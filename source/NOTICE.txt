@@ -1,0 +1,1 @@
+Source files were promoted to repository root for GitHub-friendly layout.
