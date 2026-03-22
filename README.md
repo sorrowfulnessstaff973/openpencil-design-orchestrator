@@ -1,8 +1,28 @@
 # openpencil-design-orchestrator
 
-[English](./README.md) | [简体中文](./README.zh-CN.md)
+**English** | [简体中文](./README.zh-CN.md)
+
+[![Release](https://img.shields.io/github/v/release/ziiinian/openpencil-design-orchestrator?display_name=tag)](https://github.com/ziiinian/openpencil-design-orchestrator/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Repo](https://img.shields.io/badge/OpenClaw-Agent%20Skill-blue)](https://github.com/ziiinian/openpencil-design-orchestrator)
+
+Controlled AI-assisted design workflow for Pencil / OpenPencil.
 
 An Agent Skill for orchestrating Pencil / OpenPencil design work through a staged, MCP-first workflow.
+
+## Quick Start
+
+### Option 1 — Download the packaged skill
+Go to the latest release and download:
+
+- [`openpencil-design-orchestrator.skill`](https://github.com/ziiinian/openpencil-design-orchestrator/releases/latest)
+
+### Option 2 — Inspect the source
+Browse the skill source directly in this repository:
+
+- `SKILL.md`
+- `references/`
+- `scripts/`
 
 ## What it does
 
@@ -41,13 +61,15 @@ This skill is not the best primary path for:
 ```text
 .
 ├── SKILL.md
+├── README.md
+├── README.zh-CN.md
 ├── references/
 ├── scripts/
 ├── dist/
 │   └── openpencil-design-orchestrator.skill
 ├── source/
 │   └── NOTICE.txt
-└── README.md
+└── LICENSE
 ```
 
 ## Key files
@@ -69,31 +91,11 @@ Example: “Only redesign the hero section; do not touch the rest.”
 ### 3. Audit an existing design
 Example: “Review spacing, typography hierarchy, and token consistency before editing.”
 
-## Packaging
+## Release
 
-The packaged distributable artifact is included here:
-
-- `dist/openpencil-design-orchestrator.skill`
-
-If you modify the source, repackage the skill from the source folder / repo root using your normal skill packaging flow.
-
-## Notes
-
-This repository is organized for GitHub readability:
-
-- source files live at the repository root
-- packaged artifact lives in `dist/`
-- minimal repo-only files like `.gitignore` are included
+- Latest release: <https://github.com/ziiinian/openpencil-design-orchestrator/releases/latest>
+- First public release: <https://github.com/ziiinian/openpencil-design-orchestrator/releases/tag/v1.0.0>
 
 ## License
 
 This repository is released under the MIT License. See [LICENSE](./LICENSE).
-
-## GitHub setup suggestions
-
-If you are publishing this repository on GitHub, you can reuse the prepared metadata in [GITHUB_METADATA.md](./GITHUB_METADATA.md), including:
-
-- repository short description
-- bilingual summary text
-- suggested topics
-- optional About text

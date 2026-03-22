@@ -2,7 +2,25 @@
 
 [English](./README.md) | **简体中文**
 
+[![Release](https://img.shields.io/github/v/release/ziiinian/openpencil-design-orchestrator?display_name=tag)](https://github.com/ziiinian/openpencil-design-orchestrator/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Repo](https://img.shields.io/badge/OpenClaw-Agent%20Skill-blue)](https://github.com/ziiinian/openpencil-design-orchestrator)
+
 一个面向 Pencil / OpenPencil 的 Agent Skill，用来把 AI 辅助设计任务拆成**分阶段、可控、可验证**的 MCP-first 工作流。
+
+## 快速开始
+
+### 方式 1：直接下载打包好的 skill
+前往 Release 页面下载：
+
+- [`openpencil-design-orchestrator.skill`](https://github.com/ziiinian/openpencil-design-orchestrator/releases/latest)
+
+### 方式 2：直接查看源码
+你也可以直接阅读仓库里的 skill 源码：
+
+- `SKILL.md`
+- `references/`
+- `scripts/`
 
 ## 这个 skill 是做什么的
 
@@ -53,6 +71,8 @@
 ├── scripts/
 ├── dist/
 │   └── openpencil-design-orchestrator.skill
+├── source/
+│   └── NOTICE.txt
 └── LICENSE
 ```
 
@@ -83,18 +103,10 @@
 例如：
 - “先检查 spacing、层级、token 一致性，再决定要不要改。”
 
-## 获取方式
+## 发布
 
-### 源码仓库
-- GitHub 仓库：
-  - <https://github.com/ziiinian/openpencil-design-orchestrator>
-
-### 打包发布
-- Release 页面：
-  - <https://github.com/ziiinian/openpencil-design-orchestrator/releases>
-
-其中包含：
-- `openpencil-design-orchestrator.skill`
+- 最新发布：<https://github.com/ziiinian/openpencil-design-orchestrator/releases/latest>
+- 首个公开版本：<https://github.com/ziiinian/openpencil-design-orchestrator/releases/tag/v1.0.0>
 
 ## License
 
