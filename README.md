@@ -1,5 +1,7 @@
 # openpencil-design-orchestrator
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 An Agent Skill for orchestrating Pencil / OpenPencil design work through a staged, MCP-first workflow.
 
 ## What it does
