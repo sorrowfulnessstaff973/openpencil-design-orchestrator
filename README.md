@@ -47,6 +47,12 @@ For installation and first-run verification, see:
 - [Installation Guide](./docs/INSTALL.md)
 - [简体中文安装说明](./docs/INSTALL.zh-CN.md)
 
+For follow-up support materials, see:
+
+- [Troubleshooting](./docs/TROUBLESHOOTING.md)
+- [Usage Examples](./docs/EXAMPLES.md)
+- [Evaluation Guide](./docs/EVALUATION.md)
+
 ## What it does
 
 `openpencil-design-orchestrator` turns vague AI-assisted design requests into a controlled sequence of steps:

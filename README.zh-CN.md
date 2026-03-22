@@ -48,6 +48,12 @@
 - [中文安装说明](./docs/INSTALL.zh-CN.md)
 - [English Installation Guide](./docs/INSTALL.md)
 
+进一步支持材料见：
+
+- [排障说明](./docs/TROUBLESHOOTING.zh-CN.md)
+- [使用示例](./docs/EXAMPLES.zh-CN.md)
+- [评估说明](./docs/EVALUATION.zh-CN.md)
+
 ## 这个 skill 是做什么的
 
 `openpencil-design-orchestrator` 的核心目标，不是让 AI 一次性“整稿乱冲”，而是把设计任务拆成稳定流程：
