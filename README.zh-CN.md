@@ -41,6 +41,13 @@
 - “先审查这个设计稿的 spacing、字体层级、token 一致性，再决定是否修改。”
 - “先做页面结构规划，再只搭 skeleton。”
 
+## 安装与验证
+
+安装与首次验证请直接看：
+
+- [中文安装说明](./docs/INSTALL.zh-CN.md)
+- [English Installation Guide](./docs/INSTALL.md)
+
 ## 这个 skill 是做什么的
 
 `openpencil-design-orchestrator` 的核心目标，不是让 AI 一次性“整稿乱冲”，而是把设计任务拆成稳定流程：
