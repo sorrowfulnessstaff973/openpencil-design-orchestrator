@@ -22,6 +22,25 @@
 - `references/`
 - `scripts/`
 
+## 安装 / 使用方式
+
+这个仓库同时提供：
+
+- **skill 源码**
+- **打包好的 `.skill` 发布产物**
+
+推荐使用流程：
+
+1. 从最新 Release 下载 `.skill`
+2. 导入 / 安装到你的 skill 环境
+3. 在需要 Pencil / OpenPencil 分阶段设计编排时调用它
+
+典型触发说法：
+
+- “用 Pencil/OpenPencil 重做这个 Hero 区，但要分 section 安全推进。”
+- “先审查这个设计稿的 spacing、字体层级、token 一致性，再决定是否修改。”
+- “先做页面结构规划，再只搭 skeleton。”
+
 ## 这个 skill 是做什么的
 
 `openpencil-design-orchestrator` 的核心目标，不是让 AI 一次性“整稿乱冲”，而是把设计任务拆成稳定流程：
@@ -102,6 +121,15 @@
 ### 3. 审查设计稿
 例如：
 - “先检查 spacing、层级、token 一致性，再决定要不要改。”
+
+## Roadmap
+
+后续还可以继续增强：
+
+- 增加更多设计场景示例提示词
+- 补更多客户端适配说明
+- 扩展 fallback 工作流示例
+- 为后续版本增加更细的 release note
 
 ## 发布
 

@@ -24,6 +24,22 @@ Browse the skill source directly in this repository:
 - `references/`
 - `scripts/`
 
+## Installation / Use
+
+This repository ships both the **source skill** and a packaged `.skill` release artifact.
+
+Typical usage flow:
+
+1. Download the `.skill` artifact from the latest release
+2. Install/import it into your skill environment
+3. Use it when working with Pencil / OpenPencil design tasks that need staged, bounded execution
+
+Typical trigger examples:
+
+- “Use Pencil/OpenPencil to redesign this hero section, but do it section-by-section.”
+- “Audit this design for spacing, typography, and token consistency before editing.”
+- “Plan the page structure first, then create only the skeleton.”
+
 ## What it does
 
 `openpencil-design-orchestrator` turns vague AI-assisted design requests into a controlled sequence of steps:
@@ -90,6 +106,15 @@ Example: “Only redesign the hero section; do not touch the rest.”
 
 ### 3. Audit an existing design
 Example: “Review spacing, typography hierarchy, and token consistency before editing.”
+
+## Roadmap
+
+Possible future improvements:
+
+- richer example prompts for more design scenarios
+- more client-specific adapter notes
+- expanded fallback examples for non-MCP workflows
+- release notes for future versions beyond the initial public release
 
 ## Release
 
